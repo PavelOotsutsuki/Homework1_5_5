@@ -30,17 +30,7 @@ namespace Homework1_5_5
         {
             foreach (var elementArray in array)
             {
-                bool isRepeat = false;
-
-                foreach (var elementCollection in collection)
-                {
-                    if (elementCollection == elementArray)
-                    {
-                        isRepeat = true;
-                    }
-                }
-
-                if (isRepeat == false)
+                if (collection.Contains(elementArray)==false)
                 {
                     collection.Add(elementArray);
                 }
