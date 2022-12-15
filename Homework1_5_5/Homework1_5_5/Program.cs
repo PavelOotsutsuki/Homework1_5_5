@@ -17,8 +17,8 @@ namespace Homework1_5_5
             string array2Name = "array2";
             string collectionName = "collection";
 
-            AddArrayToCollection(ref collection, array1);
-            AddArrayToCollection(ref collection, array2);
+            AddArrayToCollection(collection, array1);
+            AddArrayToCollection(collection, array2);
             PrintData(array1, array1Name);
             PrintData(array2, array2Name);
             PrintData(collection, collectionName);
@@ -26,7 +26,7 @@ namespace Homework1_5_5
             Console.ReadKey();
         }
 
-        static void AddArrayToCollection(ref List<string> collection, string[] array)
+        static void AddArrayToCollection(List<string> collection, string[] array)
         {
             foreach (var elementArray in array)
             {
